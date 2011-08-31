@@ -1,0 +1,555 @@
+/* RESET CSS */
+
+/* v1.0 | 20080212 */
+/*h1,h2,h3,h4,h5,h6,h7{font-weight:normal !important;}*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {	margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;	vertical-align: baseline;	background: transparent;}
+body {line-height: 1;}
+ol, ul {	list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {	text-decoration: none;}
+del {	text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;	border-spacing: 0;}
+/* FIN RESET CSS */
+
+/* HTML */
+body
+{
+	
+	margin:auto;
+	padding:0;
+	background: url(../imgs/bg.jpg) repeat-x #333333;
+	font-family:  'DidotRegular';
+}
+h1, h2, h3, h4, h5 { font-weight: normal }
+/*---------- HEADER -------------*/
+#wrapper
+{
+	width: 1003px;
+	margin:0 auto;
+}
+#header
+{
+	height: 30px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	width: 970px;
+	padding-right: 18px;
+	overflow: hidden;
+}
+#gcba
+{
+	float: left;
+}
+#gcba a
+{
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-indent: -5000px;
+	background: url(../imgs/bsas.png);
+}
+#haciendo
+{
+	float: right;
+}
+#haciendo a
+{
+	display: block;
+	width: 105px;
+	height: 30px;
+	text-indent: -5000px;
+	background: url(../imgs/haciendo.png);
+}
+#container
+{
+	background: #FFF;
+	width: 965px;
+	padding: 0 19px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+h1
+{
+	margin-top: 43px;
+	font-size: 71px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 42px;
+	position: relative;
+	z-index: 1;
+	letter-spacing:-1px;
+}
+h2
+{
+	text-transform: uppercase;
+	font-size: 36px;
+	text-align: center;
+	margin-top: -30px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 28px;
+}
+#welcome
+{
+	text-align: center;
+	width:887px;
+	margin:0 auto;
+	font-family: 'HelveticaNeueLight';
+	font-size: 18px;
+}
+#welcomemessage
+{
+	width:503px;
+	margin:0 auto;
+	text-align:center;
+}
+#welcome span
+{
+	font-weight: bold;
+}
+#welcome p
+{
+	margin-bottom: 34px;
+}
+#confirm
+{
+	text-transform: uppercase;
+	font-size: 30px;
+	padding-top: 13px;
+	padding-bottom: 4px;
+	text-align: center;
+	margin:0 auto 60px auto;
+	display: block;
+	background: url(../imgs/boton.png);
+	width: 420px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	margin-bottom: 26px;
+	text-decoration: none;
+	color: #000;
+	font-family:  'DidotRegular';
+}
+.separador
+{
+	margin-bottom: 30px;
+	width: 100%;
+	background: url(../imgs/separador.png) no-repeat center;
+	height: 3px;
+	overflow: hidden;
+}
+#menu
+{
+	margin-bottom:20px;
+	font-family:  'DidotRegular';
+	font-size: 16px;
+	text-transform:uppercase;
+}
+#menu li
+{
+	display:inline;
+	margin-right:10px;
+	height:25px;
+}
+#menu li a
+{
+	display:inline-block;
+	height:18px;
+	color:#333333;
+	text-decoration:none;
+	padding: 7px 15px 0;
+	background:url(../imgs/input.png) repeat-x;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+/*---------- /HEADER ----------------*/
+/*---------- LOGIN FORM -------------*/
+#login
+{
+	margin-top:5px;
+	width:300px;
+	margin: 0 auto;
+}
+#login table
+{
+	font-family:  'DidotRegular';
+}
+#login table .info
+{
+	width:110px;
+	font-size:16px;
+	text-transform:uppercase;
+	text-align:right;
+}
+#login table tr
+{
+	margin-bottom:8px;
+	display:table;
+}
+#login table .field
+{
+	width:192px;
+	text-align:right;
+	overflow:hidden;
+}
+#login table .field div
+{
+	width:168px;
+	height:18px;
+	float:right;
+	background:url(../imgs/input.png);
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	padding:3px;
+}
+#login table .field div input
+{
+	width:100%;
+	border:none;
+	background:none;
+	font-family:  Arial;
+}
+#submit
+{
+	padding-top:11px;
+	width:300px;
+}
+#submit input
+{
+	width:90px;
+	background:url(../imgs/input.png) repeat-x;
+	border:none;
+	text-align:center;
+	display:block;
+	font-size:16px;
+	height:25px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+	margin-bottom:7px;
+	font-family:  'DidotRegular';
+}
+#submit a
+{
+	font-family: 'HelveticaNeueLight';
+	font-size:12px;
+	color:#000;
+	text-decoration:none;
+	letter-spacing:0.5px;
+}
+/*---------- /LOGIN FORM -------------*/
+/*---------------TABLE---------------------*/
+#table
+{
+	padding:0 6px;
+	margin-bottom:28px;
+}
+#table thead
+{
+	text-align:center;
+	vertical-align:middle;
+	background:#434343;
+	text-transform:uppercase;
+	font-size:18px;
+	color:#FFF;
+}
+#table tbody
+{
+	border-right:1px solid #e8e8e8;
+	border-left:1px solid #e8e8e8;
+}
+#table th
+{
+	height:40px;
+	vertical-align:middle;
+	font-weight:normal;
+	background:url(../imgs/tablebar.png) 100% 0 no-repeat;
+}
+#table td
+{
+	padding-top:15px;
+	padding-bottom:16px;
+	vertical-align:middle;
+	font-weight:normal;
+	font-family:"HelveticaNeueLight";
+	font-size:14px;
+	text-align:center;
+	border-right:1px solid #e8e8e8;
+	color:#434343;
+}
+td.rec, td.min, td.inv
+{
+	padding:0 12px;
+	text-align:left !important;
+}
+td.rec
+{
+	width:120px;
+}
+td.min
+{
+	width:237px;
+}
+td.inv
+{
+	width:120px;
+}
+.rec
+{
+	width:144px;
+}
+.min
+{
+	width:138px;
+}
+.dia
+{
+	width:74px;
+}
+.hor
+{
+	width:77px;
+}
+.inv
+{
+	width:261px;
+}
+.aco
+{
+	width:182px;
+}
+.mm
+{
+	width:73px;
+	background:none;
+	border:none !important;
+}
+.par
+{
+	background:#f9f9f9;
+}
+#weekbuttons
+{
+	overflow:hidden;
+	margin-bottom:16px;
+}
+#weekbuttons a
+{
+	display:block;
+	padding:8px 11px;
+	height:12px;
+	background:url(../imgs/gradient.png);
+	text-align:center;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	color:#333333;
+	text-decoration:none;
+}
+/*---------------/TABLE--------------------*/
+/*---------------GUEST ORDER---------------*/
+#order
+{
+	overflow:hidden;
+	margin-bottom:25px;
+	font-family: 'HelveticaNeueLight';
+	padding: 0 6px;
+	width:963px;
+}
+#searchtext
+{
+	padding:3px;
+	width:214px;
+	height:15px;
+	float:left;
+	background:url(../imgs/input.png);
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+#searchtext input
+{
+	font-size:14px;
+	font-family: 'HelveticaNeueLight';
+	background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    width: 100%;
+}
+#abc
+{
+	float:left;
+	font-size:14px;
+	margin-left:98px;
+	text-transform:uppercase;
+	margin-top:4px;
+}
+#abc li
+{
+	display:inline;
+}
+#orderby
+{
+	font-size:14px;
+	float:right;
+	width:222px;
+	text-transform:uppercase;
+}
+/*--------------/GUEST ORDER---------------*/
+/*---------------GUEST TABLE---------------*/
+.inv-guest{width:243px;}
+.rec-guest{width:196px;}
+.min-guest{width:212px;}
+.dia-guest{width:85px;}
+.hor-guest{width:89px;}
+.est-guest{width:118px;}
+.estado-0{color:#fa4b4b;}/*Invitado*/
+.estado-1{color:#4faf10;}/*Asistir�*/
+.estado-2{color:#fa4b4b;}/*No Asistir�*//*falta color*/
+.estado-3{color:#ffa200;}/*Pendiente*/
+.estado-4{color:#fa4b4b;}/*Ya asisti�*/
+/*---------------/GUEST TABLE---------------*/
+/*---------- CONTENT-----------------*/
+h3
+{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #333333;
+	margin-bottom:14px;
+	font-weight: normal;
+}
+#quote
+{
+	margin-bottom: 40px;
+	font-family:  'DidotRegular';
+	font-size: 24px;
+	text-transform: uppercase;
+}
+#mapa
+{
+	margin-bottom: 31px;
+}
+.descripcion
+{
+	width: 887px;
+	margin:0 auto;
+	font-family: 'HelveticaNeueLight';
+	font-size: 14px;
+}
+.descripcion p
+{
+	margin-bottom: 33px;
+}
+.descripcion span
+{
+	font-weight: bold;
+}
+.boxes
+{
+	width: 943px;
+	margin: 5px auto 20px auto;
+	overflow: hidden;
+}
+.box
+{
+	background: url(../imgs/box.jpg) repeat-x #f8f8f8;
+	padding:8px 10px 25px 10px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	width: 280px;
+	float: left;
+	margin-right: 21px;
+	margin-bottom: 21px;
+	position: relative;
+}
+.last
+{
+	margin-right: 0;
+	float: right;
+}
+.num
+{
+	overflow: hidden;
+}
+.num div
+{
+	width: 38px;
+	height: 34px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 29.29px;
+	background: url(../imgs/num.png) no-repeat;
+	float: left;
+}
+.num h3
+{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	letter-spacing: -1px;
+}
+.box img
+{
+	border: 3px solid #ededed;
+	display: block;
+	margin-bottom: 17px;
+}
+.box .texto
+{
+	font-size: 12px;
+	font-family: 'HelveticaNeueLight';
+	margin-bottom: 8px;
+}
+.box .links
+{
+	bottom: 10px;
+    font-family:  'DidotRegular';
+    font-size: 13px;
+    overflow: hidden;
+    position: absolute;
+    text-transform: uppercase;
+    width: 280px;
+}
+.box a
+{
+	text-decoration: none;
+	color: #000;
+}
+.left
+{
+	float: left;
+}
+.right
+{
+	float: right;
+}
+/*---------- /CONTENT-------------*/
+/*------- FOOTER --------*/
+#footer p
+{
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 11px;
+	font-family: 'HelveticaNeueLight';
+	color: #333333;
+}
+#footer a
+{
+	text-decoration: none;
+	color: #333333;
+}
+/*------- /FOOTER --------*/
