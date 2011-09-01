@@ -101,7 +101,7 @@ h2
 }
 #welcome
 {
-	text-align: center;
+	/*text-align: center;*/
 	width:887px;
 	margin:0 auto;
 	font-family: 'HelveticaNeueLight';

@@ -35,7 +35,14 @@ $mensaje = $mensaje_array[0]["valor"];*/
 			<h1>Ver Para Creer</h1>
 			<div id="welcome">
 				<p>
-					yadayadayada
+					<strong>Estimados:</strong><br />
+					<p>Soy parte de un equipo de personas que comparte el sueño de construir una Ciudad y una Argentina mejor; y todos juntos trabajamos desde el priemr día con pasión y entusiasmo para hacerlo realidad.<br />
+					Decidí involucrarme en política con la convicción de que cada argentino tiene algo que aprtar para cumplir ese sueño, y llegué con el entusiasmo de quien quiere que la gente viva bien, de quien se interesa por lo que le pasa al otro.<br />
+					Hace ya tres años que asumí como Jefe de Gobierno de la Ciudad y estoy orgulloso de todo lo que hemos logrado desde entonces.<br />
+					Trabajamos sin descanso y demostramos que una forma distinta de gobernar es posible. Dimos y damos todo de cada uno, con la mirada puesta en la verdadera responsabilidad de la política: hacer que todos podamos vivir mejor.<br />
+					En solo tres años, demostramos que estamos haciendo de BuenosAires una gran Ciudad, avanzando en todas las áreas con grandes y pequeñas obras y acciones.<br />
+					Hoy queremos compartir algunas de ellas con ustedes. Por eso lanzamos Ver Para Creer, un programa de visitas a través del cual los invitamos a recorrer algunas de las principales obras de esta gestión. Espero que lo disfruten y se contagien del entusiasmo que nosotros tenemos desde el primer día y que hoy mantenemos más intacto que nunca.</p>
+					Mauricio Macri<br /> Jefe de Gobierno
 				</p>
 			</div>
 			<div class="separador">&nbsp;</div>

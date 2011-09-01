@@ -36,11 +36,11 @@ function sanitize($input, $con = null) {
 
 
 function connect() {
- $con = mysql_connect('10.10.10.64', "verparacreer", "notengoquever");
+ $con = mysql_connect('localhost', "vpc", "vpc");
  if(!$con){
   trigger_error("Problem connecting to server");
  }  
- $db =  mysql_select_db('verparacreer', $con);
+ $db =  mysql_select_db('vpc', $con);
   if(!$db){
    trigger_error("Problem selecting database");
  }  

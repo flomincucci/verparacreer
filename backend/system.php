@@ -6,13 +6,13 @@ session_start();
 header("Content-type: text/html; charset=utf-8");
 include("functions/dbfunctions.php");
 ini_set("display_errors", 1);
-define("DBHOST", "10.10.10.64");
-define("DBUSER", "verparacreer");
-define("DBPASS","notengoquever");
+define("DBHOST", "localhost");
+define("DBUSER", "vpc");
+define("DBPASS","vpc");
 define("SALT","0303456");
-define("BACKEND_URL","/verparacreer/backend/");
-define("DASHBOARD_URL","/verparacreer/backend/dashboard.php");
-define("UPLOAD_PATH", "/var/www/html/verparacreer/backend/upload/");
+define("BACKEND_URL","/vpc-reloaded/backend/");
+define("DASHBOARD_URL","/vpc-reloaded/backend/dashboard.php");
+define("UPLOAD_PATH", "/opt/lampp/htdocs/vpc-reloaded/backend/upload/");
 connect();
 $menu = array(
     "dashboard"=>(object)array(
@@ -31,18 +31,18 @@ $menu = array(
         "url"=>BACKEND_URL."lugares/index.php",
         "name"=>"Hito"
     ),
-    "rubro"=>(object)array(
+    /*"rubro"=>(object)array(
         "url"=>BACKEND_URL."rubros/index.php",
         "name"=>"Rubro"
     ),
-    "ministerio"=>(object)array(
+    /*"ministerio"=>(object)array(
         "url"=>BACKEND_URL."ministerios/index.php",
         "name"=>"Ministerio"
     )/*,
     "recorrido"=>(object)array(
         "url"=>BACKEND_URL."recorridos/index.php",
         "name"=>"Recorrido"
-    )*/,
+    ),*/
     "configuracion"=>(object)array(
         "url"=>BACKEND_URL."conf/form.php",
         "name"=>"Configuración"

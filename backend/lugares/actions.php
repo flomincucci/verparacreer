@@ -22,7 +22,13 @@ switch ($_REQUEST["action"])
         $lugar = new Lugar($id);
         if (isset($_POST['nombre'])) $lugar->setNombre($_POST['nombre']);
         if (isset($_POST['descripcion'])) $lugar->setDescripcion($_POST['descripcion']);
-        if (isset($_FILES['imagen'])){if(($_FILES['imagen']["name"]!="")){$name = $id."_".time().".jpg";move_uploaded_file($_FILES['imagen']['tmp_name'], UPLOAD_PATH."$name");$lugar->setImagen($name);}};
+        if (isset($_FILES['imagen'])){
+					if(($_FILES['imagen']["name"]!="")){
+						$name = $id."_".time().".jpg";
+						$move = move_uploaded_file($_FILES['imagen']['tmp_name'], UPLOAD_PATH."$name");
+						if ($move) $lugar->setImagen($name);
+					}
+				};
         if (isset($_POST['coordenadas'])) $lugar->setCoordenadas($_POST['coordenadas']);
         $insert_id = $lugar->save();
         if($insert_id>0)
