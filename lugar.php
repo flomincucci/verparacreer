@@ -40,14 +40,14 @@ $lugar = new Recorrido($lugarid);
       <!--<img src="imgs/mapa.jpg" id="mapa" alt="Mapa" />-->
       <?php if ($recorrido->getMapa()):?> 
         <!--<iframe width="965" height="334" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo $recorrido->getMapa() ?>"></iframe>-->
-        <div id="map" style="width: 965px; height: 334px"></div>
-        <script type="text/javascript">
+        <div id="map" style="width: 965px; height: 334px"><img src="timthumb.php?src=backend/upload/<?php echo $recorrido['imagen'] ?>&h=334&w=965" /></div>
+        <!--<script type="text/javascript">
           var map = new GMap(document.getElementById("map"));
           map.setCenter(new GLatLng(<?php echo $lugar['coordenadas'] ?>), 15);
           map.addControl(new GLargeMapControl()); 
           var point = new GLatLng(<?php echo $lugar['coordenadas'] ?>);
           map.addOverlay(new GMarker(point));
-        </script>
+        </script>-->
       <?php endif; ?>
 
       <div id="footer">

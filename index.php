@@ -57,20 +57,21 @@ $mensaje = $mensaje_array[0]["valor"];*/
 					</div>
 					<!--<img src="imgs/foto.jpg" alt="Foto" />-->
 					<!--<img src="timthumb.php?src=<?php echo $recorrido['imagen'] ?>&amp;w=275&amp;h=180&amp;zc=1'" alt="<?php echo $recorrido['nombre'] ?>" width="275" height="180" />-->
-				<div id="map<?php echo $i ?>" style="width: 275px; height: 180px"></div>
-				<script type="text/javascript">
+				<div id="map<?php echo $i ?>" style="width: 275px; height: 180px"><img src="timthumb.php?src=backend/upload/<?php echo $recorrido['imagen'] ?>&h=170&w=275" /></div>
+				<!--<script type="text/javascript">
 								  var map = new GMap(document.getElementById("map<?php echo $i ?>"));
 								  map.setCenter(new GLatLng(<?php echo $recorrido['coordenadas'] ?>), 14);
 								  map.addControl(new GLargeMapControl()); 
 								  var point = new GLatLng(<?php echo $recorrido['coordenadas'] ?>);
 								  map.addOverlay(new GMarker(point));
-        </script>
+        </script>-->
 					<div class="texto">
 						<?php echo substr(htmlentities($recorrido['descripcion']),0,300).'...' ?>
 					</div>
 					<div class="links">
 						<a href="hito.php?id=<?php echo $recorrido['id'] ?>" class="left" >+ ver m&aacute;s</a>
-						<a href="solicitarinvitacion.php?recorrido=<?php echo $recorrido['id'] ?>" class="right" >solicitar invitaci&oacute;n</a>
+						<!--<a href="solicitarinvitacion.php?recorrido=<?php echo $recorrido['id'] ?>" class="right" >solicitar invitaci&oacute;n</a>-->
+						<a href="mailto:info@verparacreer.gob.ar?subject=<?php echo htmlentities($recorrido['nombre']) ?>" class="right" >solicitar invitaci&oacute;n</a>
 					</div>
 				</div>
 				<?php $i++; ?>

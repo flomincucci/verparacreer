@@ -22,11 +22,6 @@ define ('ALLOW_EXTERNAL', FALSE);			// allow external website (override security
 
 // external domains that are allowed to be displayed on your website
 $allowedSites = array (
-	'flickr.com',
-	'picasa.com',
-	'blogger.com',
-	'wordpress.com',
-	'img.youtube.com',
 );
 
 

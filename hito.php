@@ -37,15 +37,15 @@ $lugar = new Lugar($lugarid);
           <?php echo htmlentities($lugar->getDescripcion()) ?>
         </p>
       </div>
-      <a href="solicitarinvitacion.php?hito=<?php echo $lugar->getId() ?>" id="confirm">solicitar invitaci&oacute;n</a>
-        <div id="map" style="width: 965px; height: 334px"></div>
-        <script type="text/javascript">
+     <a href="mailto:info@verparacreer.gob.ar?subject=<?php echo htmlentities($lugar->getNombre()) ?>" id="confirm">solicitar invitaci&oacute;n</a>
+        <div id="map" style="width: 965px; height: 334px"><img src="timthumb.php?src=backend/upload/<?php echo $lugar->getImagen() ?>&h=334&w=965" /></div>
+        <!--<script type="text/javascript">
           var map = new GMap(document.getElementById("map"));
           map.setCenter(new GLatLng(<?php echo $lugar->getCoordenadas() ?>), 16);
           map.addControl(new GLargeMapControl()); 
           var point = new GLatLng(<?php echo $lugar->getCoordenadas() ?>);
           map.addOverlay(new GMarker(point));
-        </script>
+        </script>-->
 
       <div id="footer">
         <div class="separador">
